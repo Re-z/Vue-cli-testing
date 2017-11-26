@@ -1,11 +1,8 @@
 <template>
-  <h1>Hello vue-cli world2!!</h1>
+  <tag-name></tag-name>
 </template>
 
 <script>
-export default {
-
-}
 </script>
 
 <style lang="scss">
