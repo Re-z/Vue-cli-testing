@@ -1,11 +1,11 @@
 import Vue from 'vue'
 import App from './App.vue'
 
-import Home from './home.vue'
+import ServerStatus from './ServerStatus.vue'
 
 
 
-Vue.component('tag-name', Home)
+Vue.component('tag-name', ServerStatus)
 
 new Vue({
   el: '#app',

@@ -1,20 +1,17 @@
-<template>
-  <p @click="changeStatus">home component is {{ status }}</p>
-</template>
+<!--<template>-->
+  <!--&lt;!&ndash;we have to wrap our code with some div&ndash;&gt;-->
+  <!--<div>-->
+    <!--<tag-name></tag-name>-->
+  <!--</div>-->
+<!--</template>-->
 
 
-<script>
-  export default {
-    data: function() {
-      return {
-        status: true
-      }
-    },
-    methods: {
-      changeStatus: function() {
-        this.status = !this.status
-      }
-    }
-  }
-</script>
-<style></style>
+<!--<script>-->
+  <!--import ServerStatus from './ServerStatus.vue'-->
+  <!--export default {-->
+    <!--components: {-->
+      <!--'tag-name' : ServerStatus-->
+    <!--}-->
+  <!--}-->
+<!--</script>-->
+<!--<style></style>-->
