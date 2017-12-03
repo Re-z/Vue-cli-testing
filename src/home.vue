@@ -1,17 +1,17 @@
-<!--<template>-->
-  <!--&lt;!&ndash;we have to wrap our code with some div&ndash;&gt;-->
-  <!--<div>-->
-    <!--<tag-name></tag-name>-->
-  <!--</div>-->
-<!--</template>-->
+<template>
+  <!--we have to wrap our code with some div-->
+  <div>
+    <ServerStatus v-for="server in 5"></ServerStatus>
+  </div>
+</template>
 
 
-<!--<script>-->
-  <!--import ServerStatus from './ServerStatus.vue'-->
-  <!--export default {-->
-    <!--components: {-->
-      <!--'tag-name' : ServerStatus-->
-    <!--}-->
-  <!--}-->
-<!--</script>-->
-<!--<style></style>-->
+<script>
+  import ServerStatus from './ServerStatus.vue'
+  export default {
+    components: {
+      'ServerStatus' : ServerStatus
+    }
+  }
+</script>
+<style></style>
