@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>308 Time to Practice 2 - Events Code</title>
+</head>
+<body>
+<div class="asset-container">
+    <div class="asset-container__padding article-view">
+        <div class="w3c-default">
+            <p>Find the JSFiddle here: <a href="https://jsfiddle.net/smax/q2s3fpku/" rel="nofollow">https://jsfiddle.net/smax/q2s3fpku/</a></p>
+
+<p>Or use this Code:</p>
+
+
+
+<p><strong>HTML:</strong></p>
+
+
+
+<pre class="prettyprint linenums">&lt;script src="https://npmcdn.com/vue/dist/vue.js"&gt;&lt;/script&gt;
+&lt;div id="exercise"&gt;
+    &lt;!-- 1) Show an alert when the Button gets clicked --&gt;
+    &lt;div&gt;
+        &lt;button v-on:click="alertMe"&gt;Show Alert&lt;/button&gt;
+    &lt;/div&gt;
+    &lt;!-- 2) Listen to the "keydown" event and store the value in a data property (hint: event.target.value gives you the value) --&gt;
+    &lt;div&gt;
+        &lt;input type="text" v-on:keydown="value = $event.target.value"&gt;
+        &lt;p&gt;{‌{ value }}&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;!-- 3) Adjust the example from 2) to only fire if the "key down" is the ENTER key --&gt;
+    &lt;div&gt;
+        &lt;input type="text" v-on:keydown.enter="value = $event.target.value"&gt;
+        &lt;p&gt;{‌{ value }}&lt;/p&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</pre>
+
+
+
+
+
+<p><br></p>
+
+
+
+<p><strong>CSS:</strong></p>
+
+<p>None</p>
+
+
+
+<p><strong>JavaScript:</strong></p>
+
+<pre class="prettyprint linenums">new Vue({
+        el: '#exercise',
+        data: {
+            value: ''
+        },
+        methods: {
+        alertMe: function() {
+          alert('Alert!');
+          }
+        }
+    });</pre>
+
+
+
+<p><br></p>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

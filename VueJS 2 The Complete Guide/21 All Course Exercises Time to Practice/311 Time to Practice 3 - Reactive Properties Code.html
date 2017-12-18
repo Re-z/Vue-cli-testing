@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>311 Time to Practice 3 - Reactive Properties Code</title>
+</head>
+<body>
+<div class="asset-container">
+    <div class="asset-container__padding article-view">
+        <div class="w3c-default">
+            <p>Find the JSFiddle here: <a href="https://jsfiddle.net/smax/9gtcb87t/" rel="nofollow">https://jsfiddle.net/smax/9gtcb87t/</a></p>
+
+<p>Or use this Code:</p>
+
+
+
+<p><strong>HTML:</strong></p>
+
+
+
+<pre class="prettyprint linenums">&lt;script src="https://npmcdn.com/vue/dist/vue.js"&gt;&lt;/script&gt;
+&lt;div id="exercise"&gt;
+    &lt;!-- 1) Show a "result" of 'not there yet' as long as "value" is not equal to 37 - you can change "value" with the buttons. Print 'done' once you did it --&gt;
+    &lt;div&gt;
+        &lt;p&gt;Current Value: {‌{ value }}&lt;/p&gt;
+        &lt;button @click="value += 5"&gt;Add 5&lt;/button&gt;
+        &lt;button @click="value += 1"&gt;Add 1&lt;/button&gt;
+        &lt;p&gt;{‌{ result }}&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;!-- 2) Watch for changes in the "result" and reset the "value" after 5 seconds (hint: setTimeout(..., 5000) --&gt;
+    &lt;div&gt;
+        &lt;input type="text"&gt;
+        &lt;p&gt;{‌{ value }}&lt;/p&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</pre>
+
+
+
+
+
+<p><br></p>
+
+
+
+<p><strong>CSS:</strong></p>
+
+<p>None</p>
+
+
+
+<p><strong>JavaScript:</strong></p>
+
+
+
+<pre class="prettyprint linenums">new Vue({
+        el: '#exercise',
+        data: {
+            value: 0
+        },
+        computed: {
+        result: function() {
+          return this.value == 37 ? 'done' : 'not there yet';
+          }
+        },
+        watch: {
+        result: function() {
+          var vm = this;
+          setTimeout(function() {
+            vm.value = 0;
+            }, 5000);
+          }
+        }
+    });</pre>
+
+
+
+<p><br></p>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

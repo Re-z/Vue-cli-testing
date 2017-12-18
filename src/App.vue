@@ -24,6 +24,5 @@
 
 </script>
 
-<style lang="scss">
-
+<style lang="scss" >
 </style>
